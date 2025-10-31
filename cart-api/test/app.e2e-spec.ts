@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { AppModule } from './../src/app.module';
-import { UsersService } from './../src/users';
+import { AppModule } from '../src/app.module';
+import { UsersService } from '../src/users';
 
 const fakeUser = {
   name: 'test',
