@@ -6,9 +6,7 @@ import { ConfigService } from '@nestjs/config';
 export async function createApp() {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors({
-    origin: (req, callback) => callback(null, true),
-  });
+  app.enableCors({ origin: (req, callback) => callback(null, true) });
   app.use(helmet());
 
   return app;

@@ -31,7 +31,8 @@ export class CartStack extends cdk.Stack {
         DB_HOST: props.dbInstance.instanceEndpoint.hostname,
         DB_PORT: "5432",
         DB_NAME: "cartdb",
-        DB_SECRET_NAME: props.dbSecret.secretName,
+        DB_USER: "myadminuser",
+        DB_PASSWORD: "supersecret",
       },
     });
 
